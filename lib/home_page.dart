@@ -3,7 +3,42 @@ import 'package:flutter/material.dart';
 import 'contact_view.dart';
 
 class HomePage extends StatelessWidget {
-  const HomePage({Key? key}) : super(key: key);
+   HomePage({Key? key}) : super(key: key);
+
+  final List<Map<String,String>> data=[
+  {
+    "name": "Efya Ibra",
+    "phone":"+233553909518",
+    "email":"marzukatuibrahim18@gmail.com",
+    "country":"Ghana",
+    "region":"Koforidua"
+  },{
+    "name": "Marazaka ibra",
+    "phone":"+233547464624",
+    "email":"zukatu0@gmail.com",
+    "country":"Ghana",
+    "region":"Tutu"
+  },{
+    "name": "Efya Ibra",
+    "phone":"+233543909518",
+    "email":"tarkwa24@gmail.com",
+    "country":"Ghana",
+    "region":"Tarkwa"
+  },{
+    "name": "Zukatu ",
+    "phone":"+233230909518",
+    "email":"marzukatu18@gmail.com",
+    "country":"Ghana",
+    "region":"Tamale"
+  },{
+    "name": "Efya Zuka",
+    "phone":"+233553909518",
+    "email":"myfirstday0@gmail.com",
+    "country":"Ghana",
+    "region":"Kasoa"
+  },
+  
+  ];
 
   @override
   Widget build(BuildContext context) {
@@ -12,14 +47,14 @@ class HomePage extends StatelessWidget {
             backgroundColor: Colors.white,
             elevation: 0,
             centerTitle: false,
-            title: Text('My Contact',
+            title: const Text('My Contact',
                 style: TextStyle(
                     color: Colors.black,
                     fontSize: 25.0,
                     fontWeight: FontWeight.w600)),
-            actions: [
+            actions: const [
               Padding(
-                padding: const EdgeInsets.only(right: 15),
+                padding:  EdgeInsets.only(right: 15),
                 child: CircleAvatar(
                   backgroundImage: AssetImage('assets/maa.jpg'),
                   radius: 30.0,
