@@ -136,6 +136,8 @@ class HomePage extends StatelessWidget {
                 ),
               ),
               GroupedListView<Map<String, String>, String>(
+                shrinkWrap: true,
+                
                 elements: data,
                 groupBy: (element) =>
                     element['name'].toString().substring(0, 1),
